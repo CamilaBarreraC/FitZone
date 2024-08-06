@@ -1,0 +1,247 @@
+@import url(https://fonts.googleapis.com/css2?family=Barlow:wght@100&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Barlow:wght@700&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Barlow:ital,wght@1,500&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Aleo&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Barlow:ital,wght@1,600&display=swap);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #000;
+    cursor: url(../imagenes/mouse.png), auto;  
+}
+
+a{
+    cursor: url(../imagenes/click.png), auto;
+}
+
+button{
+    cursor: url(../imagenes/click.png), auto;
+}
+
+/* CSS HEADER */
+
+.logo{
+    width: 136px;
+    height: 129px;
+}
+
+.links{
+    color: #FFF;
+    text-align: center;
+    font-family: Barlow;
+    font-size: 30px;
+    font-style: italic;
+    font-weight: 300;
+    line-height: normal;
+    text-decoration: none;
+}
+
+.head{
+    background: #000;
+    font-size: 24px;
+    min-width: 1000px;
+    margin: auto;
+    padding: 1px;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 60px;
+    padding-left: 20px;
+}
+
+.links{
+    display: inline-block;
+    padding: 5px 15px;
+}
+
+.links:hover{
+    color: red;
+}
+
+/* CSS FONDO UBICACIÓN */
+
+.fondo_ubi{
+    height: 225px;
+    background-image: url(../imagenes/ubicacion.png);
+    background-size: cover;
+}
+
+.dir{
+    width: 487px;
+    align-items: center;
+    text-align: center;
+    margin-left: 485px;
+}
+
+.direccion{
+    color: #FFF;
+    text-align: center;
+    font-family: Aleo;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.mapa{
+    width: 1443px;
+    height: 550px;
+}
+
+/* FOOTER */
+
+footer{
+    display:flex;
+    height: 347px;
+    background: #2E2E2E;
+    background-size: cover;
+}
+
+.contact{
+    padding-top: 70px;
+}
+
+.contacto{
+    text-align: justify;
+    font-family: Barlow;
+    font-size: 32px;
+    font-style: italic;
+    font-weight: 600;
+    line-height: normal;
+    text-decoration-line: underline;
+    color: white;
+}
+
+.contacto:hover{
+    color:#F00;
+}
+
+.contacto2{
+    color: #FFF;
+    text-align: center;
+    font-family: Aleo;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-decoration: none;
+
+}
+
+.contacto2:hover{
+    color: red;
+}
+
+.foot{
+    margin-left: 400px;
+    margin-top: 40px;
+}
+
+.hora{
+    color: #FFF;
+    text-align: justify;
+    font-family: Barlow;
+    font-size: 26px;
+    font-style: italic;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.logoFooter{
+    width: 338px;
+    height: 350px;    
+}
+
+/* CSS LÍNEA HEADER */
+
+.lineas_ubi{
+    display: grid;
+    place-items: center;
+}
+
+.linea_ubi{
+    width: 742.001px;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+/* CSS LÍNEA */
+
+.lineas{
+    display: grid;
+    place-items: center;
+}
+
+.linea{
+    width: 742.001px;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+/* CSS 2° LÍNEA */
+
+.lineas_text{
+    display: grid;
+    place-items: center;
+}
+
+.linea_text{
+    width: 742.001px;
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+
+/* CSS 3° LÍNEA */
+
+.lineas_3{
+    display: grid;
+    place-items: center;
+}
+
+.linea_3{
+    width: 742.001px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+/* HORARIOS */
+
+.texto_horario{
+    display: flex;
+    padding-left: 300px;
+    width: 1440px;
+}
+
+.horas{
+    flex-direction: column;
+    justify-content: center;
+    color: #F00;
+    text-align: justify;
+    font-family: Barlow;
+    font-size: 26px;
+    font-style: italic;
+    font-weight: 600;
+    line-height: normal;
+    padding-left: 80px;
+}
+
+.contacto_ubi{
+    color: #FFF;
+    text-align: center;
+    font-family: Aleo;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-decoration: none;
+    width: 370px;
+    padding-top: 40px;
+}

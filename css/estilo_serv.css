@@ -1,0 +1,296 @@
+@import url(https://fonts.googleapis.com/css2?family=Barlow:wght@100&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Barlow:wght@700&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Barlow:ital,wght@1,500&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Aleo&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Barlow:ital,wght@1,600&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap);
+
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+body{
+    background-color: #000;
+    cursor: url(../imagenes/mouse.png), auto;  
+}
+
+a{
+    cursor: url(../imagenes/click.png), auto;
+}
+
+button{
+    cursor: url(../imagenes/click.png), auto;
+}
+
+/* CSS HEADER */
+
+.logo{
+    width: 136px;
+    height: 129px;
+}
+
+.links{
+    color: #FFF;
+    text-align: center;
+    font-family: Barlow;
+    font-size: 30px;
+    font-style: italic;
+    font-weight: 300;
+    line-height: normal;
+    text-decoration: none;
+}
+
+.head{
+    background: #000;
+    font-size: 24px;
+    min-width: 1000px;
+    margin: auto;
+    padding: 1px;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 60px;
+    padding-left: 20px;
+}
+
+.links{
+    display: inline-block;
+    padding: 5px 15px;
+}
+
+.links:hover{
+    color: red;
+}
+
+/* CSS LÍNEA HEADER */
+
+.lineas_serv{
+    display: grid;
+    place-items: center;
+}
+
+.linea_serv{
+    width: 742.001px;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+/* CSS LÍNEA */
+
+.lineas{
+    display: grid;
+    place-items: center;
+}
+
+.linea{
+    width: 742.001px;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+/* CSS 2° LÍNEA */
+
+.lineas_text{
+    display: grid;
+    place-items: center;
+}
+
+.linea_text{
+    width: 742.001px;
+    margin-top: 20px;
+    margin-bottom: 90px;
+}
+
+/* CSS LÍNEA FINAL */
+
+.lineas_final{
+    display: grid;
+    place-items: center;
+}
+
+.linea_final{
+    width: 742.001px;
+    margin-top: 90px;
+    margin-bottom: 90px;
+}
+
+/* CSS FOOTER */
+
+footer{
+    display:flex;
+    height: 347px;
+    background: #2E2E2E;
+    background-size: cover;
+}
+
+.contact{
+    padding-top: 70px;
+}
+
+.contacto{
+    text-align: justify;
+    font-family: Barlow;
+    font-size: 32px;
+    font-style: italic;
+    font-weight: 600;
+    line-height: normal;
+    text-decoration-line: underline;
+    color: white;
+}
+
+.contacto:hover{
+    color:#F00;
+}
+
+.contacto2{
+    color: #FFF;
+    text-align: center;
+    font-family: Aleo;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-decoration: none;
+
+}
+
+.contacto2:hover{
+    color: red;
+}
+
+.foot{
+    margin-left: 400px;
+    margin-top: 40px;
+}
+
+.hor{
+    color: #FFF;
+    text-align: justify;
+    font-family: Barlow;
+    font-size: 26px;
+    font-style: italic;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.logoFooter{
+    width: 338px;
+    height: 350px;    
+}
+
+/* CSS INICIO */
+
+.servicio_inicio{
+    background: url(../imagenes/img3.jpg), lightgray 50% / cover no-repeat;
+    height: 300px;
+    background-size: cover;
+    padding: 70px 20px;
+}
+
+.ser_titulo{
+    color: #FFF;
+    text-align: center;
+    font-family: Barlow;
+    font-size: 60px;
+    font-style: italic;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.servicio_texto{
+    color: #FFF;
+    text-align: center;
+    font-family: Barlow;
+    font-size: 30px;
+    font-style: italic;
+    font-weight: 700;
+    line-height: normal;
+}
+
+/* CSS TARJETAS */
+
+.card-title{
+    color: #FFF;
+    font-family: Inter;
+    font-size: 30px;
+    font-style: italic;
+    font-weight: 600;
+    line-height: normal;
+    text-align: center;
+}
+
+/* PRUEBA ANIMACIÓN */
+
+.card{
+    margin-left: 170px;
+    margin-bottom: 70px;
+    border-radius: 10px;
+    width: 462px;
+    height: 318px; 
+    background-color: #000;
+}
+
+.card .face{
+    position:absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 20px;
+    overflow: hidden;
+    transition: .5s;
+    background: black;
+}
+
+.card .front{
+    transform: perspective(600px) rotateY(0deg);
+    box-shadow: 0 5px 10px #000;
+}
+
+.card .front .card-img-top{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card .front .card-title{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 45px;
+    line-height: 45px;
+    text-align: center;
+}
+
+.card .back{
+    transform: perspective(600px) rotateY(180deg);
+    background: rgb(153, 21, 21);
+    justify-content: space-between;
+    text-align: center;
+    padding-top: 50px;
+    box-shadow: 0 5px 10px #000;
+}
+
+.card .back .card-title{
+    letter-spacing: 1px;
+    padding-top: 40px;
+    width: 400px;
+    padding-left: 40px;
+    text-align: center;
+    display: grid;
+    place-items: center;
+    text-decoration-line:underline;
+}
+
+.card:hover .front{
+    transform: perspective(600px) rotateY(180deg);
+}
+
+.card:hover .back{
+    transform: perspective(600px) rotateY(360deg);
+}
+
